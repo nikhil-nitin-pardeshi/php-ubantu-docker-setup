@@ -1,0 +1,9 @@
+services:
+  php-app:
+    build: .
+    container_name: php_ubuntu_container
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/php-ubantu-docker-setup
+    restart: always
